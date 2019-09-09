@@ -49,23 +49,7 @@ function cancelForm(){
         document.location.href="../index.html";
     }
 }
-
-function getImageData(){
-    var categories = [];
-    var images = [];
-    var articles = document.getElementById("articulos").children;
-    var i;
-    for (i = 0; i < articles.length; i++){
-        categories.push(articles[i].children)
-    }
-
-    for (i = 0; i < categories.length; i++){
-        images.push(categories[i].children)
-    }
-
-    console.log(categories);
-    console.log(images);
-}   
+   
 function getImageData(){
     var imagenes = document.getElementsByClassName("imagenes");
     var i;
